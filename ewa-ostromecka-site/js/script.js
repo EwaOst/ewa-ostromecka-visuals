@@ -575,3 +575,64 @@ languageButtons.forEach(button => {
 const savedLanguage = localStorage.getItem("ewaLanguage") || "pl";
 
 applyLanguage(savedLanguage);
+
+/* =========================
+   WEJŚCIE DO SEKCJI Z PODSTRON
+========================= */
+
+window.addEventListener("load", () => {
+
+  const params = new URLSearchParams(window.location.search);
+
+  let sectionId = null;
+
+  if (params.get("contact") === "1") {
+    sectionId = "contact";
+  } else if (window.location.hash) {
+    sectionId = window.location.hash.substring(1);
+  }
+
+  if (!sectionId) return;
+
+  const section = document.getElementById(sectionId);
+  const header = document.getElementById("siteHeader");
+
+  if (!section || !header) return;
+
+  /* Ustawiamy header od razu jako fixed */
+  header.classList.add("scrolled");
+
+  /* Czekamy aż przeglądarka przeliczy nowy layout */
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+
+      const headerHeight =
+        header.getBoundingClientRect().height;
+
+      const target =
+        section.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight;
+
+      document.documentElement.style.scrollBehavior = "auto";
+
+      window.scrollTo({
+        top: target,
+        left: 0,
+        behavior: "auto"
+      });
+
+      requestAnimationFrame(() => {
+        document.documentElement.style.scrollBehavior = "smooth";
+      });
+
+      window.history.replaceState(
+        {},
+        document.title,
+        window.location.pathname
+      );
+
+    });
+  });
+
+});
