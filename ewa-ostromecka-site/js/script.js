@@ -153,18 +153,22 @@ heroEyebrow: "SPORT / EVENTS / PEOPLE",
 
     offerLabel: "OFERTA",
     offerTitle: "CO MOGĘ DLA CIEBIE ZROBIĆ?",
-
     sportTitle: "SPORT",
-    sportText:
-      "Zawody, treningi, biegi i sportowe historie. Dynamiczne kadry, emocje i prawdziwy ruch.",
 
-    eventsTitle: "EVENTY",
-    eventsText:
-      "Kompleksowa fotografia wydarzeń — od pierwszych przygotowań po najważniejsze momenty.",
+sportText:
+  "Fotografia sportowa pełna emocji, dynamiki i prawdziwych momentów.",
 
-    brandsTitle: "MARKI",
-    brandsText:
-      "Zdjęcia dla marek, klubów i organizatorów, gotowe do wykorzystania w social mediach i reklamie.",
+eventsTitle: "EVENTY",
+
+eventsText:
+  "Reportaż z wydarzeń, który pokazuje atmosferę, ludzi i najważniejsze momenty.",
+
+realEstateTitle: "NIERUCHOMOŚCI",
+
+realEstateText:
+  "Fotografia nieruchomości pokazująca przestrzeń, światło i detale — tak, aby wnętrze prezentowało się atrakcyjnie i profesjonalnie.",
+
+moreTitle: "WIĘCEJ",
 
     instagramLabel: "NAJNOWSZE",
     instagramTitle: "NA INSTAGRAMIE",
@@ -289,7 +293,11 @@ formSubmit: "SEND INQUIRY",
     eventsText:
       "Comprehensive event photography — from the first preparations to the most important moments.",
 
-    brandsTitle: "BRANDS",
+      realEstateTitle: "REAL ESTATE",
+      realEstateText:
+  "Professional real estate photography that highlights space, light and the character of each place.",
+
+    moreTitle: "MORE",
     brandsText:
       "Photography for brands, clubs and organizers, ready to use across social media and advertising.",
 
@@ -413,8 +421,10 @@ formSubmit: "ANFRAGE SENDEN",
     eventsTitle: "EVENTS",
     eventsText:
       "Umfassende Eventfotografie — von den ersten Vorbereitungen bis zu den wichtigsten Momenten.",
-
-    brandsTitle: "MARKEN",
+realEstateTitle: "IMMOBILIEN",
+realEstateText:
+  "Professionelle Immobilienfotografie, die Raum, Licht und den Charakter jeder Immobilie hervorhebt.",
+    moreTitle: "MEHR",
     brandsText:
       "Fotografie für Marken, Vereine und Veranstalter, bereit für Social Media und Werbung.",
 
